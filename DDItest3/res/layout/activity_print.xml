@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a087CEFF"
+    tools:context="com.xinguodu.cts.MainActivity" >
+    
+    <TextView 
+        android:id="@+id/printname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/newkey_name"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:background="#ff1C86EE"
+        />
+    
+    <TextView 
+        android:id="@+id/printsucess_case"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/printll1"
+        android:text="@string/gm_success"
+		android:textColor="#ff66CD00"
+        />
+     <TextView 
+        android:id="@+id/printfail_case"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="@string/gm_failed"
+        android:layout_above="@+id/printscrollView1"
+        android:textColor="#ffCD0000"
+        />
+
+    <ScrollView
+        android:id="@+id/printscrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="240dp"
+        android:layout_below="@+id/printsucess_case"
+        android:background="#ffEEE9E9"
+        android:fillViewport="true"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/printtv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffEEE9E9"
+            android:textColor="#ff32CD32"
+            android:textSize="16sp" />
+    </ScrollView>
+    
+     <ScrollView
+        android:id="@+id/printscrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_above="@+id/printll"
+        android:layout_marginBottom="10dp"
+        android:background="#ffEEE9E9"
+        android:fillViewport="true"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/printtv1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffEEE9E9"
+            android:textColor="#ffFF0000"
+            android:textSize="16sp" />
+    </ScrollView>
+    <LinearLayout 
+        android:id="@+id/printll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/printname"
+        android:layout_marginTop="10dp"
+        >
+        <Button
+        android:id="@+id/printbt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="@string/run_all" />
+          <Spinner
+        android:id="@+id/printspinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="30dp"
+        android:entries="@array/print" />
+    </LinearLayout>
+  
+
+    <LinearLayout
+        android:id="@+id/printll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+        
+         <TextView
+            android:id="@+id/printtext_total"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/gm_total" />
+
+        <TextView
+            android:id="@+id/printtext_sucess"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/gm_success" />
+
+        <TextView
+            android:id="@+id/printtext_fail"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="@string/gm_failed"
+            android:textColor="#ffff0000" />
+
+        <TextView
+            android:id="@+id/printtext_sucess_rate"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/gm_successrate"
+            android:textColor="#ff0000ff" />
+    </LinearLayout>
+
+</RelativeLayout>

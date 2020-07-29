@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DDItest</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_dukpt">DukptActivity</string>
+    <string name="gm_version">GM版本号: </string>
+    <string name="gm_clear">清屏</string>
+    <string name="gm_start">开始测试</string>
+    <string name="gm_total">总次数:</string>
+    <string name="gm_successrate">成功率:</string>
+    <string name="gm_success">成功: </string>
+    <string name="gm_failed">失败:</string>
+    <string name="run_all">RUN ALL</string>
+    <string name="run_one">RUN ONE</string>
+    <string name="dukpt_name">DUKPT测试</string>
+    <string name="arithmetic_name">新接口测试</string>
+    <string name="newkey_name">新密钥测试</string>
+    <string name="ums_name">21号文测试</string>
+    <string name="oldkey_name">旧密钥测试</string>
+    <string name="kg_name">密钥组合测试</string>
+    <string name="print_name">打印测试</string>
+    <string name="xt_name">系统测试</string>
+    <string name="title_activity_newinnerkeycase">NewinnerkeycaseActivity</string>
+    <string name="title_activity_print">PrintActivity</string>
+    <string name="title_activity_innerkeycase_group">InnerkeycaseGroupActivity</string>
+    <string name="title_activity_ums">UmsActivity</string>
+    <string name="title_activity_xitong">XitongActivity</string>
+    <string name="title_activity_arithmeticActivity">arithmeticActivity</string>
+
+</resources>
